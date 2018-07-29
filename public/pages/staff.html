@@ -1,0 +1,30 @@
+
+
+<div ng-controller="staffTable">
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Class of Teacher</th>
+            <th>Mobile Number</th>
+        </tr>
+        <tr ng-repeat="y in recordStaff">
+            <td>{{y.name}}</td>
+            <td>{{y.class}}</td>
+            <td>{{y.mobile}}</td>
+        </tr>
+    </table>
+
+<table >
+    <tr>
+        <th> Enter Name</th>
+        <th> Enter Class of Teacher</th>
+        <th> Enter Mobile Number</th>
+        </tr>
+    <tr>
+        <td><input type="text" ng-model="Tname" required/></td>
+        <td><input type="text" ng-model="classT" required/></td>
+        <td><input type="number" ng-model="mNumber" required/></td>
+        <td><input type="submit" value="Submit" ng-click="submitStaff()"></td>
+    </tr>
+<table>
+</div>

@@ -1,0 +1,34 @@
+
+
+<div ng-controller="courseTable">
+    <table class="table">
+        <tr>
+            <th> CourseName</th>
+            <th>Course Teacher</th>
+            <th>Course Class</th>
+            <th>Course Number</th>
+        </tr>
+        <tr ng-repeat="c in recordCourse">
+            <td>{{c.Cname}}</td>
+            <td>{{c.courseTeacher}}</td>
+            <td>{{c.Cclass}}</td>
+            <td>{{c.Cnumber}}</td>
+        </tr>
+    </table>
+
+<table >
+    <tr>
+        <th> Enter CourseName</th>
+        <th> Enter Course Teacher</th>
+        <th> Enter Course Class</th>
+        <th> Enter Course Number</th>
+        </tr>
+    <tr>
+        <td><input type="text" ng-model="Cname" required/></td>
+        <td><input type="text" ng-model="Tclass" required/></td>
+        <td><input type="number" ng-model="cClass" required/></td>
+        <td><input type="number" ng-model="cNumber" required/></td>
+        <td><input type="submit" value="Submit" ng-click="submitCourse()"></td>
+    </tr>
+<table>
+</div>
